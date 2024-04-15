@@ -5,7 +5,12 @@ local M = {}
 M.plugin = {
   "mfussenegger/nvim-dap",
   dependencies = {
-    "rcarriga/nvim-dap-ui",
+    {
+        "rcarriga/nvim-dap-ui",
+        dependencies = {
+            "nvim-neotest/nvim-nio",
+        },
+    },
     "nvim-treesitter/nvim-treesitter",
     "theHamsta/nvim-dap-virtual-text",
     "mxsdev/nvim-dap-vscode-js",
