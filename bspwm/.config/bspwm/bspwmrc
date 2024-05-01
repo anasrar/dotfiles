@@ -74,7 +74,8 @@ killall -q thunar; thunar --daemon &
 /usr/lib/mate-polkit/polkit-mate-authentication-agent-1 &
 
 ## system tray
-killall -q stalonetray; stalonetray &
+# DEPRECATED: eww 0.6.0 has built-in system tray
+# killall -q stalonetray; stalonetray &
 
 ## applet
 killall -q nm-applet; nm-applet --indicator &
