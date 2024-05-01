@@ -77,7 +77,7 @@ killall -q thunar; thunar --daemon &
 killall -q stalonetray; stalonetray &
 
 ## applet
-killall -q nm-applet; nm-applet &
+killall -q nm-applet; nm-applet --indicator &
 killall -q blueman-applet; blueman-applet &
 
 ## compositor
