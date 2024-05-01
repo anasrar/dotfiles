@@ -108,6 +108,13 @@ tooltip {
   }
 }
 
+.tray_box {
+  margin: 0 6px 6px;
+  padding: 10px 0;
+  border-radius: 6px;
+  background: #090a0e;
+}
+
 .color_notify {
   color: #d680ec;
   background-color: rgba($color: #d680ec, $alpha: 0.25);

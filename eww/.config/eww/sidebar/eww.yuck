@@ -60,6 +60,7 @@
       :valign "end"
       :space-evenly false
       :spacing 8
+      (tray)
       (notify)
       (volume)
       (brightness)
@@ -98,6 +99,18 @@
           )
         )
       )
+    )
+  )
+)
+
+(defwidget tray []
+  (box
+    :class "tray_box"
+    (systray
+      :orientation "v"
+      :icon-size 16
+      :space-evenly true
+      :spacing 14
     )
   )
 )
@@ -523,7 +536,7 @@
   :geometry (geometry
     :x "58px"
     :y "-16px"
-    :width "150px"
+    :width "240px"
     :anchor "bottom left"
   )
   :stacking "fg"
