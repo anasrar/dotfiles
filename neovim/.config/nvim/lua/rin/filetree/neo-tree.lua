@@ -255,7 +255,7 @@ M.setup = function()
   -- # Keymap
   local keymap = require("rin.utils.keymap").keymap
 
-  keymap("n", "<Leader>e", ":Neotree toggle float<CR>")
+  keymap("n", "<Leader>e", ":Neotree toggle float reveal<CR>")
 end
 
 if not pcall(debug.getlocal, 4, 1) then
