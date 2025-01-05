@@ -1,0 +1,4 @@
+#!/usr/bin/sh
+
+xdotool selectwindow windowsize 366 788 windowmove 262 144
+xdotool search --classname "spotify" windowsize 1062 788 windowmove 638 144
