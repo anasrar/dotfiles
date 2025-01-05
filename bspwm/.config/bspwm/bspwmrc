@@ -23,6 +23,7 @@ bspc rule -a 'firefox' desktop='^2' follow=on
 bspc rule -a 'Brave-browser' desktop='^2' follow=on
 bspc rule -a 'Google-chrome' desktop='^2' follow=on
 bspc rule -a 'Gimp-2.10' desktop='^3' follow=on
+bspc rule -a 'Blender' desktop='^3' follow=on
 bspc rule -a 'vlc' desktop='^4' follow=on
 bspc rule -a 'spotify' desktop='^5' follow=on
 bspc rule -a 'Spotify' desktop='^5' follow=on
@@ -36,6 +37,7 @@ bspc rule -a 'qpwgraph' state=floating center=on
 bspc rule -a 'Viewnior' state=floating center=on
 bspc rule -a 'Gnome-screenshot' state=floating center=on
 bspc rule -a 'File-roller' state=floating center=on
+bspc rule -a 'Xarchiver' state=floating center=on
 bspc rule -a 'Blueman-manager' state=floating center=on
 bspc rule -a 'Lxappearance' state=floating center=on
 bspc rule -a 'SimpleScreenRecorder' state=floating center=on
@@ -44,6 +46,9 @@ bspc rule -a '*:*:Picture in picture' state=floating center=on
 bspc rule -a '*:*:Picture-in-Picture' state=floating center=on
 bspc rule -a '*:*:OpenCV*' state=floating center=on
 bspc rule -a "*:Godot_Engine:Godot" state=floating
+bspc rule -a "Genymotion Player:player" state=floating
+bspc rule -a "Qmmp" state=floating border=off center=off
+bspc rule -a "*:*:bevy" state=floating border=on center=on
 
 # auto start
 
