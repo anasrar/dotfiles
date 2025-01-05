@@ -7,6 +7,6 @@
 # create $HOME/.ctp-entry and add path each line
 
 TARGET=$(find $(cat $HOME/.ctp-entry) -mindepth 1 -maxdepth 1 -type d | fzf --prompt "   " --pointer " " --color 16)
-if [[ $TARGET != "" ]]; then
+if [ "$TARGET" != "" ]; then
   cd $TARGET
 fi

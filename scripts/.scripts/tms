@@ -7,15 +7,15 @@
 # create $HOME/.tms-entry and add path each line
 
 TARGET=$(find $(cat $HOME/.tms-entry) -mindepth 1 -maxdepth 1 -type d | fzf --prompt "   " --pointer " " --color 16)
-if [[ $TARGET != "" ]]; then
+if [ "$TARGET" != "" ]; then
   FIRST=$(basename $(dirname $TARGET))
   SECOND=$(basename $TARGET)
   SESSION_NAME="$FIRST""_""$SECOND"
   tmux has -t $SESSION_NAME 2>/dev/null
-  if [[ $? != 0 ]]; then
+  if [ $? != 0 ]; then
     tmux new -d -c $TARGET -s $SESSION_NAME
   fi
-  if [[ -z "$TMUX" ]]; then
+  if [ -z "$TMUX" ]; then
     tmux a -t $SESSION_NAME
   else
     tmux switch -t $SESSION_NAME
