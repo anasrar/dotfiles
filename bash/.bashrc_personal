@@ -38,7 +38,7 @@ alias kkkkt='eza -lahT -L 3 --color=auto --icons --group-directories-first'
 alias kkkkg='eza -lah --color=auto --icons --group-directories-first --git'
 
 # moc
-alias mocp='mocp -T tty'
+alias mocp='mocp -T tty -O SoundDriver=ALSA -O ALSAStutterDefeat=yes'
 
 # gotop
 alias gotop='[ "$TERM" = "xterm-kitty" ] && TERM=xterm gotop || TERM=xterm-kitty gotop'
