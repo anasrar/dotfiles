@@ -39,6 +39,9 @@ shift + Print
 alt + Print
 	maim -i $(xdotool getactivewindow) | xclip -selection clipboard -t image/png ; notify-send -i "$HOME/.local/share/icons/Grade-orange-dark/symbolic/places/folder-pictures-symbolic.svg" "Screenshot" " Save On Clipboard"
 
+# magnifier
+super + equal
+	bash --login -i -c "x_magnifier"
 
 #
 # bspwm hotkeys
