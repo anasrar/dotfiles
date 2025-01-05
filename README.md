@@ -1,6 +1,6 @@
 # dotfiles
 
-My 2024 dotfiles.
+My 2025 dotfiles.
 
 # Details
 
