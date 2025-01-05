@@ -11,7 +11,7 @@
 	 {alacritty, bspc rule -a \* -o state=floating center=on rectangle=1206x788+0+0 && alacritty}
 
 super + Muhenkan
-	sh -c "$HOME/.config/sxhkd/scripts/toggle-dropdown-terminal"
+	bash --login -i -c "$HOME/.config/sxhkd/scripts/toggle-dropdown-terminal"
 
 # make sxhkd reload its configuration files:
 super + Escape
