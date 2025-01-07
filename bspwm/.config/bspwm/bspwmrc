@@ -5,6 +5,10 @@ xrdb -merge ~/.config/bspwm/Xresources &
 
 killall -q sxhkd; sxhkd &
 
+# change caps to esc
+
+setxkbmap -option caps:escape
+
 bspc monitor -d 0 1 2 3 4 5 6
 
 # new node on left side
