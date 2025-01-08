@@ -16,6 +16,7 @@ M.setup = function()
   require("rin.personal.window").setup()
   require("rin.personal.tab").setup()
   require("rin.personal.mouse").setup()
+  require("rin.personal.leader").setup()
 end
 
 if not pcall(debug.getlocal, 4, 1) then
