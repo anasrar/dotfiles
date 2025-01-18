@@ -6,14 +6,13 @@ M.plugin = {
   "mfussenegger/nvim-dap",
   dependencies = {
     {
-        "rcarriga/nvim-dap-ui",
-        dependencies = {
-            "nvim-neotest/nvim-nio",
-        },
+      "rcarriga/nvim-dap-ui",
+      dependencies = {
+        "nvim-neotest/nvim-nio",
+      },
     },
     "nvim-treesitter/nvim-treesitter",
     "theHamsta/nvim-dap-virtual-text",
-    "mxsdev/nvim-dap-vscode-js",
   },
   event = "VeryLazy",
   config = function()
@@ -86,7 +85,7 @@ M.setup = function()
       },
       {
         elements = {
-          { id = "repl", size = 0.5 },
+          { id = "repl",    size = 0.5 },
           { id = "console", size = 0.5 },
         },
         size = 10,
@@ -94,8 +93,8 @@ M.setup = function()
       },
     },
     floating = {
-      max_height = nil, -- These can be integers or a float between 0 and 1.
-      max_width = nil, -- Floats will be treated as percentage of your screen.
+      max_height = nil,   -- These can be integers or a float between 0 and 1.
+      max_width = nil,    -- Floats will be treated as percentage of your screen.
       border = "rounded", -- Border style. Can be "single", "double" or "rounded"
       mappings = {
         close = { "q", "<Esc>" },
