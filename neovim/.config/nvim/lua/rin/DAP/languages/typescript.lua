@@ -1,5 +1,7 @@
 --[=[
-TODO: new instruction
+- Download `js-debug-dap-${version}.tar.gz` from https://github.com/microsoft/vscode-js-debug/releases
+- Extract it somewhere `tar xvzf js-debug-dap-${version}.tar.gz`
+- Point args to `src/dapDebugServer.js`
 --]=]
 
 local ok = require("rin.utils.check_requires").check({
